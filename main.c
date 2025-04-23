@@ -30,7 +30,7 @@ int main() {
         switch (choice) {
             case 1: // Add Feed Item
                 printf("Enter ID, Name of animal feed, Quantity(Kg), Price per Kg: ");
-                scanf("%d %s %f %f", &item.id, item.name, &item.quantity, &item.price);
+                scanf("%d %s %d %d", &item.id, item.name, &item.quantity, &item.price);
                 addFeedItem(filename, item);
                 printf("Feed item added successfully.\n");
                 break;
